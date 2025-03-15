@@ -1,0 +1,79 @@
+@charset "UTF-8";
+header {
+  height: auto;
+  transform: scale(1.1);
+}
+
+.divHeader {
+  display: flex;
+  height: 80px;
+  padding: 25px;
+}
+
+.menuMobile {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos entre sí */
+  align-items: center; /* Alinea verticalmente los elementos */
+  width: 100%;
+}
+
+.menuHamburger {
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.lineMenu1, .lineMenu2 {
+  height: 2px;
+  width: 25px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+
+.letterH {
+  padding: 10px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1), -1px 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  width: 35px;
+  margin-left: -70px;
+}
+
+.lineMenu3 {
+  margin-bottom: 0;
+  height: 2px;
+  width: 25px;
+  background-color: black;
+}
+
+.titleHotelMiranda h5 {
+  font-family: "Archivo";
+  margin-left: -80px;
+}
+
+.h5Hotel {
+  font-weight: 800;
+}
+
+.h5Miranda {
+  font-weight: 500;
+}
+
+.iconProfile, .iconLens {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.iconsProfileLens {
+  margin-right: -10px;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+/*# sourceMappingURL=styles.css.map */
