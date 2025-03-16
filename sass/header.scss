@@ -1,12 +1,13 @@
 header{
     height: auto;
-    transform: scale(1.1);
+    //width: 100%;
 }
 
 .divHeader{
     display: flex;
     height: 80px;
-    padding: 25px;
+    width: 100%;
+    //width: 100%;
 }
 
 .menuMobile{
