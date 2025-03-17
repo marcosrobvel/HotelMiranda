@@ -1,0 +1,48 @@
+.divMinimalDuplexRoom_price-Night{
+    position: relative;
+    bottom: 20px;
+    z-index: 111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    background-color: white;
+    width: 370px;
+    justify-self: center;
+}
+
+.paraphsPriceNight{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.divMinimalDuplexRoom_price-Night h1{
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.divMinimalDuplexRoom_price-Night h5{
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.divTextMinimalDuplexRoom{
+    width: 60%;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+
+.paraphsPriceNight .p1, .paraphsPriceNight .p2{
+    font-family: 'Archivo';
+    color: #BEAD8E;
+    font-weight: 700;
+}
+
+.paraphsPriceNight .p1{
+    font-weight: 400;
+    font-size: 32px;
+}

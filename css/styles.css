@@ -423,6 +423,241 @@ input#slide3:checked ~ .slider-wrapper {
   background-color: white;
 }
 
+.divMinimalDuplexRoom_price-Night {
+  position: relative;
+  bottom: 20px;
+  z-index: 111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  background-color: white;
+  width: 370px;
+  justify-self: center;
+}
+
+.paraphsPriceNight {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.divMinimalDuplexRoom_price-Night h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.divMinimalDuplexRoom_price-Night h5 {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.divTextMinimalDuplexRoom {
+  width: 60%;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.paraphsPriceNight .p1, .paraphsPriceNight .p2 {
+  font-family: "Archivo";
+  color: #BEAD8E;
+  font-weight: 700;
+}
+
+.paraphsPriceNight .p1 {
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.diTitles_Video_and_Button {
+  background-color: #222222;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  margin-top: 30px;
+}
+
+.diTitles_Video_and_Button h5 {
+  color: #BEAD8E;
+  font-family: "Archivo";
+  letter-spacing: 2.8px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.diTitles_Video_and_Button h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  font-family: "Old Standard TT";
+}
+
+.bigTitle_VideoButton {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.diTitles_Video_and_Button p {
+  font-family: "Archivo";
+  color: white;
+  font-weight: 100;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.diTitles_Video_and_Button video {
+  margin-bottom: 20px;
+}
+
+.diTitles_Video_and_Button button {
+  color: white;
+  border-color: #ffffff;
+  background-color: #BEAD8E;
+  font-family: "Archivo";
+  letter-spacing: 3px;
+  font-weight: 500;
+  height: 60px;
+  padding: 20px;
+  width: 200px;
+}
+
+.facilities_CoreFeatures_and_Slider {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.facilities_CoreFeatures_and_Slider h5 {
+  font-family: "Archivo";
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  color: #777777;
+  margin-bottom: 15px;
+}
+
+.facilities_CoreFeatures_and_Slider h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.facilities_CoreFeatures_and_Slider .iconStarsHand {
+  position: relative;
+  right: -100px;
+  top: 30px;
+}
+
+.facilities_CoreFeatures_and_Slider .iconNumbersDifused {
+  position: relative;
+  left: -110px;
+}
+
+.divBigTitle_Paraph_Facilities {
+  width: 300px;
+  display: flex;
+  justify-self: left;
+  flex-direction: column;
+  margin-top: 35px;
+}
+
+.divBigTitle_Paraph_Facilities h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.divBigTitle_Paraph_Facilities p {
+  font-family: "Archivo";
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.iconSlider {
+  margin-top: 40px;
+}
+
+.divFoodMenu {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.option1Image {
+  height: 100px;
+  width: 100px;
+  background-color: #DBDBDB;
+}
+
+.divFoodMenu h5 {
+  font-family: "Archivo";
+  letter-spacing: 2.8px;
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.iconDonut {
+  position: absolute;
+  right: 0;
+}
+
+.divFoodMenu .bigTitleOurFoodsMenu {
+  margin-bottom: 30px;
+}
+
+.divFoodMenu h1 {
+  font-family: "Old Standard TT";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.slider_OptionsMenu h1 {
+  font-size: 24px;
+}
+
+.slider_OptionsMenu h5 {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.slider_OptionsMenu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option1Menu, .option2Menu, .option3Menu {
+  display: flex;
+}
+
+.Title_Text_FoodMenu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 200px;
+}
+
+.Title_Text_FoodMenu h1, .Title_Text_FoodMenu p {
+  position: relative;
+  bottom: 15px;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
