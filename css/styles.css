@@ -220,6 +220,95 @@ input[type=date] {
   margin-top: 30px;
 }
 
+.strongTeamDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.strongTeamDiv .imagenGris {
+  height: 300px;
+  width: 270px;
+  background-color: #E4E4E4;
+}
+
+.divIcons_Title_SmallText_strongTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.divIcons_Title_SmallText_strongTeam h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.divIcons_Title_SmallText_strongTeam .iconStrongTeam {
+  margin-bottom: 25px;
+}
+
+.divIcons_Title_SmallText_strongTeam p {
+  text-align: center;
+  width: 200px;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.divIcons_Title_SmallText_strongTeam .iconDifusedStrongTeam {
+  position: absolute;
+  z-index: -1;
+  top: 288%;
+  left: 48%;
+}
+
+.luxuryRoom_HandPickedRooms {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  width: 270px;
+}
+
+.imagenGrisHandPickedRooms {
+  height: 300px;
+  width: 100%;
+  background-color: #E4E4E4;
+}
+
+.blackBackgroundHandPickedRooms {
+  background-color: #222222;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.blackBackgroundHandPickedRooms h1 {
+  margin-top: 25px;
+  font-family: "Old Standard TT";
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.blackBackgroundHandPickedRooms p {
+  font-family: "Roboto";
+  text-align: center;
+  font-size: small;
+  width: 190px;
+  font-weight: 200;
+  line-height: 22px;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;
