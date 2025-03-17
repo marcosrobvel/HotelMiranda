@@ -61,10 +61,6 @@ header {
   margin-right: 20px;
 }
 
-.iconsProfileLens {
-  margin-right: -10px;
-}
-
 .blackBackground_ThePerfectBaseForYou {
   height: auto;
   background-color: #333333;
@@ -239,6 +235,10 @@ input[type=date] {
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .divIcons_Title_SmallText_strongTeam h1 {
@@ -307,6 +307,120 @@ input[type=date] {
   width: 190px;
   font-weight: 200;
   line-height: 22px;
+}
+
+.slider-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background-color: #BEAD8E;
+  color: white;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input#slide1:checked ~ .slider-wrapper {
+  transform: translateX(0%);
+}
+
+input#slide2:checked ~ .slider-wrapper {
+  transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slider-wrapper {
+  transform: translateX(-200%);
+}
+
+.prev, .next {
+  visibility: visible;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.titleRooms_titleHandPickedRooms_Slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.titleRooms_titleHandPickedRooms_Slider h5 {
+  font-family: "Archivo";
+  letter-spacing: 3px;
+  color: #777777;
+}
+
+.titleRooms_titleHandPickedRooms_Slider h1 {
+  font-family: "Old Standard TT";
+  font-size: 60px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.divIconsRoom img {
+  width: auto;
+  height: 18px;
+  margin: 0 10px;
+}
+
+.divIconsRoom {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 111;
+  position: relative;
+  top: 20px;
+  background-color: white;
 }
 
 html, * {

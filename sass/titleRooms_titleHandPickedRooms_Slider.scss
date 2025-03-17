@@ -1,0 +1,40 @@
+.titleRooms_titleHandPickedRooms_Slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.titleRooms_titleHandPickedRooms_Slider h5{
+    font-family: 'Archivo';
+    letter-spacing: 3px;
+    color: #777777;
+}
+
+.titleRooms_titleHandPickedRooms_Slider h1{
+    font-family: 'Old Standard TT';
+    font-size: 60px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.divIconsRoom img{
+    width: auto;
+    height: 18px;
+    margin: 0 10px;
+}
+
+.divIconsRoom{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 111;
+    position: relative;
+    top: 20px;
+    background-color: white;
+}
