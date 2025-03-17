@@ -92,6 +92,7 @@ header {
   font-family: "Old Standard TT";
   font-size: 60px;
   font-weight: 10;
+  line-height: 110%;
 }
 
 .btns_TakeTour_LearnMore {
@@ -99,6 +100,10 @@ header {
   flex-direction: column;
   width: 200px;
   margin-top: 30px;
+}
+
+.btns_TakeTour_LearnMore .btnTakeATour {
+  background-color: #BEAD8E;
 }
 
 .btns_TakeTour_LearnMore button {
@@ -112,9 +117,8 @@ header {
   margin-bottom: 20px;
 }
 
-.btns_TakeTour_LearnMore button:hover {
+button:hover {
   cursor: pointer;
-  background-color: #BEAD8E;
 }
 
 .btns_TakeTour_LearnMore button:last-child {
@@ -143,6 +147,7 @@ input[type=date] {
   padding-bottom: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 50px;
 }
 
 .selectDates input {
@@ -160,7 +165,7 @@ input[type=date] {
 .btnCheckAvailability button {
   color: white;
   border-color: #ffffff;
-  background-color: #333333;
+  background-color: #BEAD8E;
   font-family: "Archivo";
   letter-spacing: 3px;
   font-weight: 500;
@@ -168,9 +173,51 @@ input[type=date] {
   padding: 20px;
 }
 
-.btnCheckAvailability button:hover {
-  cursor: pointer;
+.aboutUsHome {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  background-color: #F9F9F9;
+  padding-bottom: 200px;
+}
+
+.bigTitle_DiscoverOurUnderground h1 {
+  font-family: "Old Standard TT";
+  font-size: 60px;
+  font-weight: 10;
+  margin-top: 30px;
+  line-height: 110%;
+}
+
+.h5AboutUsHomeTitle h5 {
+  padding-top: 40px;
+  font-family: "Archivo";
+  letter-spacing: 2.8px;
+  color: #777777;
+}
+
+.informationmText_BtnBookNow {
+  margin-top: 15px;
+  padding-right: 20px;
+}
+
+.informationmText_BtnBookNow p {
+  font-family: "Archivo";
+  line-height: 25px;
+  font-size: 14px;
+}
+
+.informationmText_BtnBookNow button {
+  color: white;
+  border-color: #ffffff;
   background-color: #BEAD8E;
+  font-family: "Archivo";
+  letter-spacing: 3px;
+  font-weight: 500;
+  height: auto;
+  padding: 20px;
+  width: 216px;
+  margin-top: 30px;
 }
 
 html, * {
