@@ -1,0 +1,136 @@
+footer{
+    margin-top: 40px;
+}
+
+.footerContainer{
+    background-image: url(../img/footerBackground.png);
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.imgH_Title{
+    font-family: 'Archivo';
+    color: white;
+    background-color: #BEAD8E;
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.titleHotelMirandaH1{
+    font-family: 'Archivo';
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.titleHotelMirandaH1 .h1Hotel{
+    font-weight: 700;
+}
+
+.titleHotelMirandaH1 .h1Miranda{
+    font-weight: 400;
+}
+
+.footerTitle{
+    display: flex;
+}
+
+.text_and_Icons_Footer p{
+    margin-top: 50px;
+    font-family: 'Archivo';
+    font-weight: 400;
+    font-size: 16px;
+    color: #777777;
+    line-height: 26px;
+}
+
+.iconsFooter{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.iconAround{
+    background-color: #F8F8F8;
+    display: inline-block;
+    padding: 5px;
+}
+
+.insideIconT{
+    background-color: #777777;
+    color: #777777;
+}
+
+.footerServices{
+    margin-top: 30px;
+}
+
+.footerServices h1{
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.servicesList{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 320px;
+}
+
+.servicesList p{
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.contactFooter{
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contactFooter h1{
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+}
+
+.contactTypes{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 35px;
+}
+
+.contactComponent{
+    display: flex;
+    gap: 20px;
+}
+
+.contactComponent h1{
+    font-size: 20px;
+  //  margin-left: 20px;
+}
+
+.contactComponent p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.copyrightSection_termsOfUse{
+    padding: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.copyrightSection_termsOfUse .paraphCopyright{
+    margin-bottom: 20px;
+}

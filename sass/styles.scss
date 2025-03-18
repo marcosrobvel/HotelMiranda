@@ -1,16 +1,9 @@
-@import 'header.scss' ;
-@import 'blackBackground_ThePerfectBaseForYou.scss';
-@import 'aboutUsHome.scss';
-@import 'strongDivTeam.scss';
-@import 'luxuryRoom_HandPickedRooms.scss';
-@import 'slider.scss';
-@import 'titleRooms_titleHandPickedRooms_Slider.scss';
-@import 'divMinimalDuplexRoom_price-Night.scss';
-@import 'diTitles_Video_and_Button.scss';
-@import 'facilities_CoreFeatures_and_Slider.scss';
-@import 'divFoodMenu.scss';
-@import 'sliderHome_3Images.scss';
-@import 'blackBackgroundFinalHome.scss';
+@import 'home.scss';
+@import 'about.scss';
+@import 'offers.scss';
+@import 'rooms.scss';
+@import 'roomDetails.scss';
+@import 'contact.scss';
 
 html, * { 
     box-sizing: border-box;
