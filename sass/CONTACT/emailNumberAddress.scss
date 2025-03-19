@@ -1,0 +1,21 @@
+.emailNumberAddress{
+    margin-top: 50px;
+}
+
+.sectionAddress h1, .sectionNumber h1, .sectionEmail h1{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 200px;
+    line-height: 100%;
+    color: #F8F8F8;
+    z-index: -111;
+  /*  position: relative;
+    left: 100;*/
+}
+
+.textAddressContact h1, .textNumberContact h1, .textEmailContact h1{
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-size: 20px;
+    color: #222222;
+}
