@@ -1,0 +1,21 @@
+.divVideo_and_TextTitle_AboutUs{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divVideo_and_TextTitle_AboutUs video{
+    height: 220px;
+}
+
+.divVideo_and_TextTitle_AboutUs h1{
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Old Standard TT';
+    font-weight: 400;
+    font-size: 32px;
+    color: #222222;
+    letter-spacing: -1.16;
+}
