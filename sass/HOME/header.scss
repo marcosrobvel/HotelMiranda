@@ -12,8 +12,8 @@ header{
 
 .menuMobile{
     display: flex;
-    justify-content: space-between;  /* Distribuye los elementos entre sí */
-    align-items: center;            /* Alinea verticalmente los elementos */
+    justify-content: space-between; 
+    align-items: center;   
     width: 100%;  
 }
 
@@ -32,7 +32,7 @@ header{
 .letterH{
     padding: 10px;
     box-shadow: 
-    1px 2px 5px rgba(0, 0, 0, 0.1),    /* Sombra hacia abajo y derecha */
+    1px 2px 5px rgba(0, 0, 0, 0.1),  
     -1px 2px 5px rgba(0, 0, 0, 0.1);
     display: inline-flex;
     width: 35px;
