@@ -1,0 +1,88 @@
+.facilitiesCoreFeaturesAboutUs{
+    background-color: #222222;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+
+    h5{
+        font-family: 'Archivo';
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: #FFFFFF;
+    }
+
+    h1{
+        font-family: 'Old Standard TT';
+        font-weight: 400;
+        font-size: 56px;
+        color: #FFFFFF;
+    }
+
+    .sliderHighRating{
+        background-color: #292929;
+        padding: 20px;
+        margin-top: 30px;
+        text-align: left;
+
+        
+    
+        .h1_paraph{
+
+            h1{
+                font-size: 30px;
+                letter-spacing: -0.9;
+                margin-top: 20px;
+            }
+
+            p{
+                font-family: 'Archivo';
+                font-weight: 400;
+                color: #FFFFFF;
+                font-size: 14px;
+                line-height: 24px;
+                width: 80%;
+                margin-top: 20px;
+            }
+        }
+
+        .h1Big01{
+            font-family: 'Archivo';
+            font-weight: 700;
+            font-size: 120px;
+            line-height: 130px;
+            color: #222222; 
+            position: absolute;
+            bottom: -96rem;
+            right: 0;
+            margin-right: 30px;
+         }
+
+         img{
+            margin-top: 60px;
+            margin-bottom: 10px;
+         }
+    }
+    
+    .dots-container {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .dot {
+        height: 8px;
+        width: 8px;
+        margin: 0 1.5px;
+        background-color: #333333;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+
+        &:hover{
+            background-color: #BEAD8E;
+        }
+    }
+}
