@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header__container {
   display: flex;
   height: 80px;
@@ -305,7 +306,7 @@
   left: 48%;
 }
 
-.luxuryRoom_HandPickedRooms {
+.luxury-room__hand-picked-rooms {
   margin-top: 80px;
   display: flex;
   justify-content: center;
@@ -313,14 +314,12 @@
   flex-wrap: wrap;
   width: 270px;
 }
-
-.imagenGrisHandPickedRooms {
+.luxury-room__hand-picked-rooms .luxury-room__image-gray {
   height: 300px;
   width: 100%;
   background-color: #E4E4E4;
 }
-
-.blackBackgroundHandPickedRooms {
+.luxury-room__hand-picked-rooms .luxury-room__black-background {
   background-color: #222222;
   height: auto;
   display: flex;
@@ -331,15 +330,13 @@
   padding-top: 50px;
   padding-bottom: 40px;
 }
-
-.blackBackgroundHandPickedRooms h1 {
+.luxury-room__hand-picked-rooms .luxury-room__black-background .luxury-room__title {
   margin-top: 25px;
   font-family: "Old Standard TT";
   font-weight: 300;
   margin-bottom: 15px;
 }
-
-.blackBackgroundHandPickedRooms p {
+.luxury-room__hand-picked-rooms .luxury-room__black-background .luxury-room__description {
   font-family: "Roboto";
   text-align: center;
   font-size: small;
@@ -421,35 +418,26 @@ input#slide3:checked ~ .slider-wrapper {
   text-align: center;
 }
 
-.titleRooms_titleHandPickedRooms_Slider {
+.title-rooms__title-hand-picked-rooms-slider {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
 }
-
-.titleRooms_titleHandPickedRooms_Slider h5 {
+.title-rooms__title-hand-picked-rooms-slider h5 {
   font-family: "Archivo";
   letter-spacing: 3px;
   color: #777777;
 }
-
-.titleRooms_titleHandPickedRooms_Slider h1 {
+.title-rooms__title-hand-picked-rooms-slider h1 {
   font-family: "Old Standard TT";
   font-size: 60px;
   text-align: center;
   font-weight: 400;
   margin-top: 30px;
 }
-
-.divIconsRoom img {
-  width: auto;
-  height: 18px;
-  margin: 0 10px;
-}
-
-.divIconsRoom {
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__icons-room {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
@@ -461,8 +449,47 @@ input#slide3:checked ~ .slider-wrapper {
   top: 20px;
   background-color: white;
 }
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__icons-room img {
+  width: auto;
+  height: 18px;
+  margin: 0 10px;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__slider-container {
+  position: relative;
+  width: 100%;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__slider-wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__slide img {
+  width: 100%;
+  height: auto;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__prev, .title-rooms__title-hand-picked-rooms-slider .title-rooms__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__prev {
+  left: 10px;
+}
+.title-rooms__title-hand-picked-rooms-slider .title-rooms__next {
+  right: 10px;
+}
 
-.divMinimalDuplexRoom_price-Night {
+.minimal-duplex-room__price-night {
   position: relative;
   bottom: 20px;
   z-index: 111;
@@ -475,43 +502,37 @@ input#slide3:checked ~ .slider-wrapper {
   width: 370px;
   justify-self: center;
 }
-
-.paraphsPriceNight {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-}
-
-.divMinimalDuplexRoom_price-Night h1 {
+.minimal-duplex-room__price-night h1 {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 25px;
   margin-bottom: 15px;
 }
-
-.divMinimalDuplexRoom_price-Night h5 {
+.minimal-duplex-room__price-night h5 {
   font-family: "Roboto";
   font-weight: 400;
 }
-
-.divTextMinimalDuplexRoom {
+.minimal-duplex-room__price-night .minimal-duplex-room__text {
   width: 60%;
   line-height: 22px;
   margin-bottom: 15px;
 }
-
-.paraphsPriceNight .p1, .paraphsPriceNight .p2 {
+.minimal-duplex-room__price-night .minimal-duplex-room__paraphs-price-night {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.minimal-duplex-room__price-night .minimal-duplex-room__paraphs-price-night .minimal-duplex-room__price, .minimal-duplex-room__price-night .minimal-duplex-room__paraphs-price-night .minimal-duplex-room__night {
   font-family: "Archivo";
   color: #BEAD8E;
   font-weight: 700;
 }
-
-.paraphsPriceNight .p1 {
+.minimal-duplex-room__price-night .minimal-duplex-room__paraphs-price-night .minimal-duplex-room__price {
   font-weight: 400;
   font-size: 32px;
 }
 
-.diTitles_Video_and_Button {
+.di-titles__video-and-button {
   background-color: #222222;
   padding-left: 20px;
   padding-right: 20px;
@@ -520,29 +541,25 @@ input#slide3:checked ~ .slider-wrapper {
   padding-bottom: 40px;
   margin-top: 30px;
 }
-
-.diTitles_Video_and_Button h5 {
+.di-titles__video-and-button h5 {
   color: #BEAD8E;
   font-family: "Archivo";
   letter-spacing: 2.8px;
   margin-bottom: 20px;
   font-weight: 700;
 }
-
-.diTitles_Video_and_Button h1 {
+.di-titles__video-and-button h1 {
   color: white;
   font-weight: 400;
   font-size: 56px;
   line-height: 60px;
   font-family: "Old Standard TT";
 }
-
-.bigTitle_VideoButton {
+.di-titles__video-and-button .di-titles__big-title-video-button {
   width: 350px;
   margin-bottom: 20px;
 }
-
-.diTitles_Video_and_Button p {
+.di-titles__video-and-button p {
   font-family: "Archivo";
   color: white;
   font-weight: 100;
@@ -550,12 +567,10 @@ input#slide3:checked ~ .slider-wrapper {
   font-size: 14px;
   margin-bottom: 20px;
 }
-
-.diTitles_Video_and_Button video {
+.di-titles__video-and-button video {
   margin-bottom: 20px;
 }
-
-.diTitles_Video_and_Button button {
+.di-titles__video-and-button button {
   color: white;
   border-color: #ffffff;
   background-color: #BEAD8E;
@@ -567,7 +582,7 @@ input#slide3:checked ~ .slider-wrapper {
   width: 200px;
 }
 
-.facilities_CoreFeatures_and_Slider {
+.facilities__core-features-and-slider {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 30px;
@@ -576,128 +591,94 @@ input#slide3:checked ~ .slider-wrapper {
   flex-direction: column;
   align-items: center;
 }
-
-.facilities_CoreFeatures_and_Slider h5 {
+.facilities__core-features-and-slider h5 {
   font-family: "Archivo";
   letter-spacing: 2.8px;
   font-weight: 700;
   color: #777777;
   margin-bottom: 15px;
 }
-
-.facilities_CoreFeatures_and_Slider h1 {
+.facilities__core-features-and-slider h1 {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 56px;
   margin-bottom: 10px;
 }
-
-.facilities_CoreFeatures_and_Slider .iconStarsHand {
+.facilities__core-features-and-slider .facilities__icon-stars-hand {
   position: relative;
   right: -100px;
   top: 30px;
 }
-
-.facilities_CoreFeatures_and_Slider .iconNumbersDifused {
+.facilities__core-features-and-slider .facilities__icon-numbers-difused {
   position: relative;
   left: -110px;
 }
-
-.divBigTitle_Paraph_Facilities {
+.facilities__core-features-and-slider .facilities__div-big-title-paraph {
   width: 300px;
   display: flex;
   justify-self: left;
   flex-direction: column;
   margin-top: 35px;
 }
-
-.divBigTitle_Paraph_Facilities h1 {
+.facilities__core-features-and-slider .facilities__div-big-title-paraph h1 {
   font-size: 30px;
   margin-bottom: 15px;
 }
-
-.divBigTitle_Paraph_Facilities p {
+.facilities__core-features-and-slider .facilities__div-big-title-paraph p {
   font-family: "Archivo";
   font-weight: 400;
   line-height: 24px;
   font-size: 14px;
 }
-
-.iconSlider {
+.facilities__core-features-and-slider .facilities__icon-slider {
   margin-top: 40px;
 }
 
-.divFoodMenu {
+.food-menu {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 110px;
   display: flex;
   flex-direction: column;
 }
-
-.option1Image {
-  height: 100px;
-  width: 100px;
-  background-color: #DBDBDB;
-}
-
-.divFoodMenu h5 {
-  font-family: "Archivo";
-  letter-spacing: 2.8px;
-  font-size: 14px;
-  color: #777777;
-  margin-bottom: 20px;
-}
-
-.iconDonut {
-  position: absolute;
-  right: 0;
-}
-
-.divFoodMenu .bigTitleOurFoodsMenu {
+.food-menu__big-title {
   margin-bottom: 30px;
 }
-
-.divFoodMenu h1 {
-  font-family: "Old Standard TT";
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 60px;
+.food-menu__slider-options {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.slider_OptionsMenu h1 {
+.food-menu__slider-options h1 {
   font-size: 24px;
 }
-
-.slider_OptionsMenu h5 {
+.food-menu__slider-options h5 {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
-
-.slider_OptionsMenu {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.option1Menu, .option2Menu, .option3Menu {
+.food-menu__slider-options .food-menu__option1, .food-menu__slider-options .food-menu__option2, .food-menu__slider-options .food-menu__option3 {
   display: flex;
 }
-
-.Title_Text_FoodMenu {
+.food-menu__slider-options .food-menu__option1 h1, .food-menu__slider-options .food-menu__option2 h1, .food-menu__slider-options .food-menu__option3 h1 {
+  font-size: 24px;
+}
+.food-menu__slider-options .food-menu__option-image {
+  height: 100px;
+  width: 100px;
+  background-color: #dbdbdb;
+}
+.food-menu__slider-options .food-menu__title-text {
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   width: 200px;
 }
-
-.Title_Text_FoodMenu h1, .Title_Text_FoodMenu p {
+.food-menu__slider-options .food-menu__title-text h1, .food-menu__slider-options .food-menu__title-text p {
   position: relative;
   bottom: 15px;
 }
-
-.btnsSliderFoodMenu {
+.food-menu__btns-slider {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
@@ -706,22 +687,10 @@ input#slide3:checked ~ .slider-wrapper {
   font-weight: 200;
   font-size: 12px;
 }
-
-.prevFoodMenuSlider {
-  margin-right: 5px;
-  background-color: #F8F8F8;
-  color: black;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 200;
-}
-
-.nextFoodMenuSlider {
+.food-menu__btns-slider .food-menu__prev-slider, .food-menu__btns-slider .food-menu__next-slider {
   margin-left: 5px;
-  background-color: #F8F8F8;
+  margin-right: 5px;
+  background-color: #f8f8f8;
   color: black;
   width: 30px;
   height: 30px;
@@ -730,49 +699,69 @@ input#slide3:checked ~ .slider-wrapper {
   align-items: center;
   font-weight: 200;
 }
-
-.prevFoodMenuSlider:hover, .nextFoodMenuSlider:hover {
-  background-color: #BEAD8E;
+.food-menu__btns-slider .food-menu__prev-slider:hover, .food-menu__btns-slider .food-menu__next-slider:hover {
+  background-color: #bead8e;
   color: white;
 }
+.food-menu .food-menu__prev-slider {
+  margin-right: 5px;
+}
+.food-menu .food-menu__next-slider {
+  margin-left: 5px;
+}
 
-.sliderHome_3Images {
+.icon-donut {
+  position: absolute;
+  right: 0;
+}
+
+.food-menu h5 {
+  font-family: "Archivo";
+  letter-spacing: 2.8px;
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.food-menu h1 {
+  font-family: "Old Standard TT";
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+.slider-home-3-images {
   position: relative;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-.sliderHome_3Images input[type=radio] {
+.slider-home-3-images input[type=radio] {
   display: none;
 }
-
-.slides {
+.slider-home-3-images__slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
-.slide {
+.slider-home-3-images__slide {
   min-width: 100%;
   box-sizing: border-box;
   display: flex;
-  justify-self: center;
+  justify-content: center;
   align-items: center;
 }
-
-.slide img {
+.slider-home-3-images__slide img {
   width: 90%;
   display: block;
 }
-
-.nav-dots {
+.slider-home-3-images__nav-dots {
   text-align: center;
   margin-top: 10px;
 }
-
-.nav-dot {
+.slider-home-3-images__nav-dot {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -781,27 +770,32 @@ input#slide3:checked ~ .slider-wrapper {
   margin: 0 5px;
   cursor: pointer;
 }
-
-.nav-dot:hover,
-#slide-1:checked ~ .nav-dots .dot-1,
-#slide-2:checked ~ .nav-dots .dot-2,
-#slide-3:checked ~ .nav-dots .dot-3 {
+.slider-home-3-images__nav-dot:hover {
+  background-color: #BEAD8E;
+}
+.slider-home-3-images__nav-dot.slider-home-3-images__dot-1 {
+  background-color: #EDEDED;
+}
+.slider-home-3-images__nav-dot.slider-home-3-images__dot-2 {
+  background-color: #EDEDED;
+}
+.slider-home-3-images__nav-dot.slider-home-3-images__dot-3 {
+  background-color: #EDEDED;
+}
+.slider-home-3-images input#slide-1:checked ~ .slider-home-3-images__slides {
+  transform: translateX(0%);
+}
+.slider-home-3-images input#slide-2:checked ~ .slider-home-3-images__slides {
+  transform: translateX(-100%);
+}
+.slider-home-3-images input#slide-3:checked ~ .slider-home-3-images__slides {
+  transform: translateX(-200%);
+}
+.slider-home-3-images input#slide-1:checked ~ .slider-home-3-images__nav-dots .slider-home-3-images__dot-1, .slider-home-3-images input#slide-2:checked ~ .slider-home-3-images__nav-dots .slider-home-3-images__dot-2, .slider-home-3-images input#slide-3:checked ~ .slider-home-3-images__nav-dots .slider-home-3-images__dot-3 {
   background-color: #BEAD8E;
 }
 
-#slide-1:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-#slide-2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-#slide-3:checked ~ .slides {
-  transform: translateX(-200%);
-}
-
-.blackBackgroundFinalHome {
+.black-background-final-home {
   display: flex;
   padding-top: 50px;
   background-color: #222222;
@@ -809,19 +803,16 @@ input#slide3:checked ~ .slider-wrapper {
   width: 100%;
   flex-direction: column;
 }
-
-.iconNumberText_component img {
-  margin-bottom: 20px;
-}
-
-.iconNumberText_component {
+.black-background-final-home__icon-number-text-component {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
 }
-
-.iconNumberText_component h1 {
+.black-background-final-home__icon-number-text-component img {
+  margin-bottom: 20px;
+}
+.black-background-final-home__icon-number-text-component h1 {
   font-family: "Roboto";
   font-size: 60px;
   line-height: 136%;
@@ -829,12 +820,10 @@ input#slide3:checked ~ .slider-wrapper {
   margin: 0;
   height: 70px;
 }
-
-.iconNumberText_component h1 span {
+.black-background-final-home__icon-number-text-component h1 span {
   font-size: 16px;
 }
-
-.iconNumberText_component p {
+.black-background-final-home__icon-number-text-component p {
   color: #999999;
   font-family: "Roboto";
   font-weight: 700;
@@ -845,15 +834,22 @@ footer {
   margin-top: 40px;
 }
 
-.footerContainer {
-  background-image: url(../img/footerBackground.png);
+.footer-container {
+  background-image: url(../img/footerBackground.png); /* Aquí restauramos el fondo de imagen */
   padding-top: 30px;
   padding-left: 20px;
   padding-right: 20px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
-
-.imgH_Title {
-  font-family: "Archivo";
+.footer-container .footer-title {
+  display: flex;
+}
+.footer-container .footer-title .img-h-title {
+  font-family: "Archivo", sans-serif;
   color: white;
   background-color: #BEAD8E;
   padding: 20px;
@@ -863,118 +859,98 @@ footer {
   width: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-.titleHotelMirandaH1 {
-  font-family: "Archivo";
+.footer-container .footer-title .title-hotel-miranda {
+  font-family: "Archivo", sans-serif;
   font-size: 13px;
   margin-left: 20px;
   margin-top: 10px;
 }
-
-.titleHotelMirandaH1 .h1Hotel {
+.footer-container .footer-title .title-hotel-miranda .h1-hotel {
   font-weight: 700;
 }
-
-.titleHotelMirandaH1 .h1Miranda {
+.footer-container .footer-title .title-hotel-miranda .h1-miranda {
   font-weight: 400;
 }
-
-.footerTitle {
-  display: flex;
-}
-
-.text_and_Icons_Footer p {
+.footer-container .text-and-icons-footer p {
   margin-top: 50px;
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #777777;
   line-height: 26px;
 }
-
-.iconsFooter {
+.footer-container .text-and-icons-footer .icons-footer {
   display: flex;
   justify-content: flex-start;
   margin-top: 30px;
   gap: 15px;
 }
-
-.iconAround {
+.footer-container .text-and-icons-footer .icons-footer .icon-footer-component .icon-around {
   background-color: #F8F8F8;
   display: inline-block;
   padding: 5px;
 }
-
-.insideIconT {
-  background-color: #777777;
-  color: #777777;
-}
-
-.footerServices {
+.footer-container .text-and-icons-footer .footer-services {
   margin-top: 30px;
 }
-
-.footerServices h1 {
-  font-family: "Old Standard TT";
+.footer-container .text-and-icons-footer .footer-services h1 {
+  font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 24px;
 }
-
-.servicesList {
+.footer-container .text-and-icons-footer .footer-services .services-list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 320px;
 }
-
-.servicesList p {
+.footer-container .text-and-icons-footer .footer-services .services-list p {
   margin-top: 25px;
   font-size: 16px;
 }
-
-.contactFooter {
+.footer-container .contact-footer {
   margin-top: 40px;
   padding-bottom: 40px;
 }
-
-.contactFooter h1 {
-  font-family: "Old Standard TT";
+.footer-container .contact-footer h1 {
+  font-family: "Old Standard TT", serif;
   font-weight: 400;
+  font-size: 24px;
 }
-
-.contactTypes {
+.footer-container .contact-footer .contact-types {
   display: flex;
   flex-direction: column;
   gap: 50px;
   margin-top: 35px;
 }
-
-.contactComponent {
+.footer-container .contact-footer .contact-types .contact-component {
   display: flex;
   gap: 20px;
 }
-
-.contactComponent h1 {
+.footer-container .contact-footer .contact-types .contact-component h1 {
   font-size: 20px;
 }
-
-.contactComponent p {
-  font-family: "Roboto";
+.footer-container .contact-footer .contact-types .contact-component p {
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #777777;
 }
 
-.copyrightSection_termsOfUse {
+.copyright-section-terms-of-use {
   padding: 20px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
 }
-
-.copyrightSection_termsOfUse .paraphCopyright {
+.copyright-section-terms-of-use .paraph-copyright {
   margin-bottom: 20px;
+}
+.copyright-section-terms-of-use .paraph-termsofuse {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .menu ul {
