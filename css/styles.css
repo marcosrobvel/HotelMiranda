@@ -863,14 +863,14 @@ footer {
 }
 .footer-container .footer-title .title-hotel-miranda {
   font-family: "Archivo", sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   margin-left: 20px;
   margin-top: 10px;
 }
-.footer-container .footer-title .title-hotel-miranda .h1-hotel {
+.footer-container .footer-title .title-hotel-miranda .h2-hotel {
   font-weight: 700;
 }
-.footer-container .footer-title .title-hotel-miranda .h1-miranda {
+.footer-container .footer-title .title-hotel-miranda .h2-miranda {
   font-weight: 400;
 }
 .footer-container .text-and-icons-footer p {
@@ -1270,7 +1270,6 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 50px;
-  margin-bottom: 60px;
 }
 .divCounter_SomeFunFacts .sliderHighRating2 {
   position: relative;
@@ -1355,6 +1354,129 @@ footer {
 }
 .divCounter_SomeFunFacts .imgDefaultSlider {
   justify-content: center;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.footer-container {
+  background-image: url(../img/footerBackground.png); /* Aquí restauramos el fondo de imagen */
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer-container .footer-title {
+  display: flex;
+}
+.footer-container .footer-title .img-h-title {
+  font-family: "Archivo", sans-serif;
+  color: white;
+  background-color: #BEAD8E;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 700;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .footer-title .title-hotel-miranda {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.footer-container .footer-title .title-hotel-miranda .h2-hotel {
+  font-weight: 700;
+}
+.footer-container .footer-title .title-hotel-miranda .h2-miranda {
+  font-weight: 400;
+}
+.footer-container .text-and-icons-footer p {
+  margin-top: 50px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #777777;
+  line-height: 26px;
+}
+.footer-container .text-and-icons-footer .icons-footer {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 30px;
+  gap: 15px;
+}
+.footer-container .text-and-icons-footer .icons-footer .icon-footer-component .icon-around {
+  background-color: #F8F8F8;
+  display: inline-block;
+  padding: 5px;
+}
+.footer-container .text-and-icons-footer .footer-services {
+  margin-top: 30px;
+}
+.footer-container .text-and-icons-footer .footer-services h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.footer-container .text-and-icons-footer .footer-services .services-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 320px;
+}
+.footer-container .text-and-icons-footer .footer-services .services-list p {
+  margin-top: 25px;
+  font-size: 16px;
+}
+.footer-container .contact-footer {
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.footer-container .contact-footer h1 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.footer-container .contact-footer .contact-types {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 35px;
+}
+.footer-container .contact-footer .contact-types .contact-component {
+  display: flex;
+  gap: 20px;
+}
+.footer-container .contact-footer .contact-types .contact-component h1 {
+  font-size: 20px;
+}
+.footer-container .contact-footer .contact-types .contact-component p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.copyright-section-terms-of-use {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.copyright-section-terms-of-use .paraph-copyright {
+  margin-bottom: 20px;
+}
+.copyright-section-terms-of-use .paraph-termsofuse {
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .blackBackground_UltimateRoom {
