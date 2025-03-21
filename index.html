@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <header>
+ <!--   <header>
         <div class="divHeader">
             <div class="menuMobile">
                 <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -52,38 +52,74 @@
             
         </div>
     </header>
-    
-    <div class="blackBackground_ThePerfectBaseForYou">
-        <div class="h5Title">
+  -->  
+
+    <header class="header">
+        <div class="header__container">
+            <div class="header__menu-mobile">
+                <input type="checkbox" id="menu-toggle" class="header__menu-toggle">
+                <label for="menu-toggle" class="header__menu-hamburger">
+                    <div class="header__line header__line--1"></div>
+                    <div class="header__line header__line--2"></div>
+                    <div class="header__line header__line--3"></div>
+                </label>
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="about.html" class="header__menu-link">About Us</a></li>
+                        <li class="header__menu-item"><a href="rooms.html" class="header__menu-link">Rooms</a></li>
+                        <li class="header__menu-item"><a href="offers.html" class="header__menu-link">Offers</a></li>
+                        <li class="header__menu-item"><a href="contact.html" class="header__menu-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__letter-h">
+                    <img src="./img/H.png" alt="" class="header__letter-h-img">
+                </div>
+                <div class="header__title">
+                    <h5 class="header__title-h5">HOTEL</h5>
+                    <h5 class="header__title-h5 header__title-h5--miranda">MIRANDA</h5>
+                </div>
+                <div class="header__icons">
+                    <img class="header__icon header__icon--profile" src="./img/iconoPerfil.png" alt="Profile">
+                    <img class="header__icon header__icon--lens" src="./img/iconoLupa.png" alt="Search">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="black-background__perfect-base-for-you">
+        <div class="h5-title">
             <h5>THE ULTIMATE LUXURY EXPERIENCE</h5>
         </div>
-        <div class="bigTitle_ThePerfectBaseForYou">
+        <div class="big-title__perfect-base-for-you">
             <h1>The Perfect Base For You</h1>
         </div>
-        <div class="btns_TakeTour_LearnMore">
-            <button class="btnTakeATour">TAKE A TOUR</button>
-            <button>LEARN MORE</button>
+        <div class="btns__take-tour-learn-more">
+            <button class="btn__take-a-tour">TAKE A TOUR</button>
+            <button class="btn">LEARN MORE</button>
         </div>
     </div>
-    <div class="selectDates">
-        <div class="Arrival_LeDeparture_Dates">
-            <div class="select_ArrivalDate">
-                <label for="arrivalDate">Arrival Date</label>
-                <div class="div_Icon_Input_Date">
-                    <input value="24th march 2020" type="date" id="arrivalDate" name="date" class="">
+
+    <div class="select-dates">
+        <div class="arrival-departure__dates">
+            <div class="select__arrival-date">
+                <label for="arrival-date" class="select__label">Arrival Date</label>
+                <div class="select__input-wrapper">
+                    <input value="24th march 2020" type="date" id="arrival-date" name="date" class="select__input">
                 </div>
             </div>
-            <div class="select_LeDepartureDate">
-                <label for="departureDate">LeDeparture Date</label>
-                <div class="div_Icon_Input_Date">
-                    <input value="30th march 2020" type="date" id="departureDate" name="date">
+            <div class="select__departure-date">
+                <label for="departure-date" class="select__label">Departure Date</label>
+                <div class="select__input-wrapper">
+                    <input value="30th march 2020" type="date" id="departure-date" name="date" class="select__input">
                 </div>
             </div>
-            <div class="btnCheckAvailability">
-                <button>CHECK AVAILABILITY</button>
+            <div class="btn-check-availability">
+                <button class="btn">CHECK AVAILABILITY</button>
             </div>
         </div>
     </div>
+
     <div class="aboutUsHome">
         <div class="h5AboutUsHomeTitle">
             <h5>ABOUT US</h5>

@@ -1,66 +1,106 @@
-header {
-  height: auto;
-}
-
-.divHeader {
+.header__container {
   display: flex;
   height: 80px;
   width: 100%;
 }
-
-.menuMobile {
+.header__menu-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.menuHamburger {
+.header__menu-toggle {
+  display: none;
+}
+.header__menu-hamburger {
   cursor: pointer;
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18px;
+  width: 25px;
 }
-
-.lineMenu1, .lineMenu2 {
+.header__menu-hamburger .header__line {
   height: 2px;
   width: 25px;
   background-color: black;
-  margin-bottom: 5px;
+  transition: all 0.3s ease;
 }
-
-.letterH {
+.header__menu-toggle:checked + .header__menu-hamburger .header__line--1 {
+  transform: rotate(45deg);
+  position: relative;
+  top: 7px;
+}
+.header__menu-toggle:checked + .header__menu-hamburger .header__line--2 {
+  opacity: 0;
+}
+.header__menu-toggle:checked + .header__menu-hamburger .header__line--3 {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -7px;
+}
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  z-index: 1000;
+}
+.header__menu-toggle:checked + .header__menu-hamburger + .header__menu {
+  display: flex;
+}
+.header__menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.header__menu-item {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+  font-family: "Archivo";
+}
+.header__menu-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+.header__menu-link:hover {
+  background-color: #f0f0f0;
+}
+.header__letter-h {
   padding: 10px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1), -1px 2px 5px rgba(0, 0, 0, 0.1);
   display: inline-flex;
   width: 35px;
-  margin-left: -220px;
 }
-
-.lineMenu3 {
-  margin-bottom: 0;
-  height: 2px;
-  width: 25px;
-  background-color: black;
+.header__title {
+  margin-right: 140px;
 }
-
-.titleHotelMiranda h5 {
+.header__title-h5 {
   font-family: "Archivo";
-  margin-left: -100px;
 }
-
-.h5Hotel {
+.header__title-h5--hotel {
   font-weight: 800;
 }
-
-.h5Miranda {
+.header__title-h5--miranda {
   font-weight: 500;
 }
-
-.iconProfile, .iconLens {
+.header__icon {
   cursor: pointer;
   margin-right: 20px;
 }
 
-.blackBackground_ThePerfectBaseForYou {
+.black-background__perfect-base-for-you {
   height: auto;
   background-color: #333333;
   width: 100%;
@@ -69,39 +109,37 @@ header {
   padding-left: 20px;
   padding-bottom: 80px;
 }
-
-.blackBackground_ThePerfectBaseForYou h5 {
+.black-background__perfect-base-for-you .h5-title h5 {
   font-family: "Archivo";
   letter-spacing: 3px;
-}
-
-.h5Title {
   width: 70%;
 }
-
-.bigTitle_ThePerfectBaseForYou {
+.black-background__perfect-base-for-you .big-title__perfect-base-for-you {
   margin-top: 30px;
 }
-
-.bigTitle_ThePerfectBaseForYou h1 {
+.black-background__perfect-base-for-you .big-title__perfect-base-for-you h1 {
   font-family: "Old Standard TT";
   font-size: 60px;
-  font-weight: 10;
+  font-weight: 400;
   line-height: 110%;
 }
-
-.btns_TakeTour_LearnMore {
+.black-background__perfect-base-for-you .btns__take-tour-learn-more {
   display: flex;
   flex-direction: column;
   width: 200px;
   margin-top: 30px;
 }
-
-.btns_TakeTour_LearnMore .btnTakeATour {
+.black-background__perfect-base-for-you .btns__take-tour-learn-more .btn__take-a-tour {
   background-color: #BEAD8E;
+  color: white;
+  border-color: #ffffff;
+  font-family: "Archivo";
+  letter-spacing: 3px;
+  font-weight: 500;
+  height: 60px;
+  margin-bottom: 20px;
 }
-
-.btns_TakeTour_LearnMore button {
+.black-background__perfect-base-for-you .btns__take-tour-learn-more .btn {
   color: white;
   border-color: #ffffff;
   background-color: #333333;
@@ -111,16 +149,39 @@ header {
   height: 60px;
   margin-bottom: 20px;
 }
-
-button:hover {
+.black-background__perfect-base-for-you .btns__take-tour-learn-more .btn:last-child {
+  margin-bottom: 0;
+}
+.black-background__perfect-base-for-you .btns__take-tour-learn-more .btn:hover {
   cursor: pointer;
 }
 
-.btns_TakeTour_LearnMore button:last-child {
-  margin-bottom: 0;
+.select-dates {
+  width: auto;
+  background-color: #222222;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
 }
-
-input[type=date] {
+.select-dates .select__arrival-date,
+.select-dates .select__departure-date {
+  margin-bottom: 20px;
+}
+.select-dates .select__arrival-date .select__label,
+.select-dates .select__departure-date .select__label {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: white;
+  margin-bottom: 10px;
+}
+.select-dates .select__arrival-date .select__input-wrapper,
+.select-dates .select__departure-date .select__input-wrapper {
+  display: flex;
+}
+.select-dates .select__arrival-date .select__input-wrapper .select__input,
+.select-dates .select__departure-date .select__input-wrapper .select__input {
   display: flex;
   background-color: #222222;
   height: 40px;
@@ -128,36 +189,15 @@ input[type=date] {
   border-right: none;
   border-left: none;
   border-bottom: 2px solid #BEAD8E;
-  border-bottom-width: 100%;
   margin-top: 10px;
   margin-bottom: 30px;
   color: #686868;
 }
-
-.selectDates {
-  width: auto;
-  background-color: #222222;
-  width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 50px;
+.select-dates .select__arrival-date .select__input-wrapper .select__input:focus,
+.select-dates .select__departure-date .select__input-wrapper .select__input:focus {
+  border-color: #BEAD8E;
 }
-
-.selectDates input {
-  width: 100%;
-  background-color: #222222;
-}
-
-.Arrival_LeDeparture_Dates label {
-  font-family: "Roboto";
-  font-weight: 500;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.btnCheckAvailability button {
+.select-dates .btn-check-availability .btn {
   color: white;
   border-color: #ffffff;
   background-color: #BEAD8E;
@@ -166,6 +206,9 @@ input[type=date] {
   font-weight: 500;
   height: 60px;
   padding: 20px;
+}
+.select-dates .btn-check-availability .btn:hover {
+  background-color: #9f9f9f;
 }
 
 .aboutUsHome {
@@ -1246,6 +1289,99 @@ footer {
 }
 .facilitiesCoreFeaturesAboutUs .dot:hover {
   background-color: #BEAD8E;
+}
+
+.divCounter_SomeFunFacts {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.divCounter_SomeFunFacts .sliderHighRating2 {
+  position: relative;
+  background-color: #292929;
+  padding: 20px;
+  text-align: left;
+  max-width: 600px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.divCounter_SomeFunFacts .sliderHighRating2 img {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.divCounter_SomeFunFacts .sliderHighRating2 h1 {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+}
+.divCounter_SomeFunFacts .dots-container2 {
+  text-align: center;
+  margin-top: 10px;
+}
+.divCounter_SomeFunFacts .dots-container2 .dot2 {
+  height: 8px;
+  width: 8px;
+  margin: 0 1.5px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.divCounter_SomeFunFacts .dots-container2 .dot2.active2 {
+  background-color: #BEAD8E;
+}
+.divCounter_SomeFunFacts h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 56px;
+  color: #222222;
+  margin-top: 15px;
+}
+.divCounter_SomeFunFacts h5 {
+  color: #777777;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+.divCounter_SomeFunFacts .funFact_Counter {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+}
+.divCounter_SomeFunFacts .funFact_Counter h1 {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 50px;
+  color: #222222;
+}
+.divCounter_SomeFunFacts .funFact_Counter .arrowFunFact {
+  position: absolute;
+  right: 0;
+  margin-right: 25px;
+}
+.divCounter_SomeFunFacts .funFact_Counter img {
+  margin-right: 15px;
+}
+.divCounter_SomeFunFacts .funFact_Counter p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+.divCounter_SomeFunFacts .dotsImgSlider {
+  align-self: center;
+  margin-top: 15px;
+}
+.divCounter_SomeFunFacts .imgDefaultSlider {
+  justify-content: center;
 }
 
 .blackBackground_UltimateRoom {
