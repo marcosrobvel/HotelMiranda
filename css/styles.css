@@ -211,41 +211,39 @@
   background-color: #9f9f9f;
 }
 
-.aboutUsHome {
+.about-us-home {
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
   background-color: #F9F9F9;
   padding-bottom: 200px;
 }
-
-.bigTitle_DiscoverOurUnderground h1 {
+.about-us-home__title {
+  padding-top: 40px;
+  font-family: "Archivo";
+  letter-spacing: 2.8px;
+  color: #777777;
+}
+.about-us-home__title h5 {
+  margin: 0;
+}
+.about-us-home .big-title__discover-our-underground h1 {
   font-family: "Old Standard TT";
   font-size: 60px;
   font-weight: 10;
   margin-top: 30px;
   line-height: 110%;
 }
-
-.h5AboutUsHomeTitle h5 {
-  padding-top: 40px;
-  font-family: "Archivo";
-  letter-spacing: 2.8px;
-  color: #777777;
-}
-
-.informationmText_BtnBookNow {
+.about-us-home .information-text__btn-book-now {
   margin-top: 15px;
   padding-right: 20px;
 }
-
-.informationmText_BtnBookNow p {
+.about-us-home .information-text__btn-book-now p {
   font-family: "Archivo";
   line-height: 25px;
   font-size: 14px;
 }
-
-.informationmText_BtnBookNow button {
+.about-us-home .information-text__btn-book-now .btn {
   color: white;
   border-color: #ffffff;
   background-color: #BEAD8E;
@@ -257,21 +255,23 @@
   width: 216px;
   margin-top: 30px;
 }
+.about-us-home .information-text__btn-book-now .btn:hover {
+  cursor: pointer;
+  background-color: #9f9f9f;
+}
 
-.strongTeamDiv {
+.strong-team {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
 }
-
-.strongTeamDiv .imagenGris {
+.strong-team__image {
   height: 300px;
   width: 270px;
   background-color: #E4E4E4;
 }
-
-.divIcons_Title_SmallText_strongTeam {
+.strong-team__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -282,29 +282,26 @@
   padding-right: 30px;
   padding-left: 30px;
 }
-
-.divIcons_Title_SmallText_strongTeam h1 {
+.strong-team__content .strong-team__icon {
+  margin-bottom: 25px;
+  z-index: 1;
+}
+.strong-team__content .strong-team__title {
   font-family: "Old Standard TT";
   font-weight: 400;
   margin-bottom: 20px;
+  z-index: 1;
 }
-
-.divIcons_Title_SmallText_strongTeam .iconStrongTeam {
-  margin-bottom: 25px;
-}
-
-.divIcons_Title_SmallText_strongTeam p {
+.strong-team__content .strong-team__text {
   text-align: center;
   width: 200px;
   font-family: "Roboto";
   font-size: 14px;
   line-height: 22px;
 }
-
-.divIcons_Title_SmallText_strongTeam .iconDifusedStrongTeam {
+.strong-team__content .strong-team__icon--difused {
   position: absolute;
-  z-index: -1;
-  top: 288%;
+  top: 294%;
   left: 48%;
 }
 
