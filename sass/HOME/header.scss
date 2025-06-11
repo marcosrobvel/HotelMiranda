@@ -1,4 +1,9 @@
 .header {
+
+    &__container2{
+      display: none;
+    }
+
     &__container {
       display: flex;
       height: 80px;
@@ -129,4 +134,12 @@
 
 
 
-@media only screen and (min-width: 1000px) {}
+@media only screen and (min-width: 1000px) {
+  .header{
+    &__container {
+      display: none;
+    }
+
+
+  }
+}

@@ -1022,129 +1022,117 @@ footer {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-.blackBackground_AboutUs {
-  height: auto;
+/* Esto es el archivo styles.css generado con Sass */
+.about-us {
+  padding: 20px;
   background-color: #333333;
-  width: 100%;
   color: white;
-  padding-top: 80px;
-  padding-left: 20px;
-  padding-bottom: 60px;
+  width: 100%;
 }
-
-.blackBackground_AboutUs h5 {
+.about-us__subtitle {
   font-family: "Archivo";
-  letter-spacing: 3px;
+  letter-spacing: 2.8px;
+  font-size: 14px;
+  margin-top: 20px;
+  color: white;
 }
-
-.h5Title {
-  width: 70%;
-}
-
-.bigTitle_AboutUs {
+.about-us__main-title {
   margin-top: 30px;
-}
-
-.bigTitle_AboutUs h1 {
   font-family: "Old Standard TT";
   font-size: 60px;
-  font-weight: 10;
+  font-weight: 400;
   line-height: 110%;
 }
-
-.divLinks_Home_Rooms {
+.about-us__links {
+  margin-top: 20px;
   background-color: white;
   display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 30px;
   position: relative;
-  top: 60px;
-  right: -215px;
-}
-
-.divLinks_Home_Contact p {
+  top: 30px;
+  left: 190px;
   color: #222222;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 16px;
 }
-
-.divLinks_Home_Contact a {
+.about-us__link {
   text-decoration: none;
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 16px;
-}
-
-.linkHome {
-  margin-right: 10px;
   color: #222222;
 }
-
-.linkContact {
+.about-us__link:hover {
+  color: #BEAD8E;
+}
+.about-us__link--home {
+  margin-right: 10px;
+}
+.about-us__link--about {
   margin-left: 10px;
   color: #BEAD8E;
 }
 
-.divVideo_and_TextTitle_AboutUs {
+.about-us__video-and-title {
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
 }
-
-.divVideo_and_TextTitle_AboutUs video {
+.about-us__video {
   height: 220px;
 }
-
-.divVideo_and_TextTitle_AboutUs h1 {
+.about-us__title {
   text-align: center;
   margin-top: 30px;
-  font-family: "Old Standard TT";
+  font-family: "Old Standard TT", serif;
   font-weight: 400;
   font-size: 32px;
   color: #222222;
-  letter-spacing: -1.16;
+  letter-spacing: -1.16px;
 }
 
-.iconsServicesAboutUs {
+.about-us__icons-services {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   margin-top: 90px;
 }
-.iconsServicesAboutUs h5 {
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 12px;
-  color: #222222;
-  margin-top: 8px;
-  letter-spacing: 2.4px;
-}
-.iconsServicesAboutUs .servicesCoffeePlane {
+.about-us__icons-services__services {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
   gap: 5rem;
 }
-.iconsServicesAboutUs .servicesCityguideLuxuryRoom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-align: center;
+.about-us__icons-services__services--coffee-plane {
+  gap: 5rem;
+}
+.about-us__icons-services__services--cityguide-luxury-room {
   gap: 6rem;
   margin-top: 60px;
 }
-.iconsServicesAboutUs .servicesCityguideLuxuryRoom .serviceAboutUsLuxuryRoom {
+.about-us__icons-services__service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__icons-services__service--coffee, .about-us__icons-services__service--plane, .about-us__icons-services__service--cityguide, .about-us__icons-services__service--luxury-room {
   margin-top: 10px;
+}
+.about-us__icons-services__service--luxury-room {
   margin-right: 20px;
 }
+.about-us h5 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #222222;
+  margin-top: 8px;
+  letter-spacing: 2.4px;
+}
 
-.divRestaurantAboutUs {
+.restaurant-about-us {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 80px;
@@ -1152,7 +1140,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
-.divRestaurantAboutUs h5 {
+.restaurant-about-us__title {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 14px;
@@ -1160,7 +1148,7 @@ footer {
   margin-top: 30px;
   letter-spacing: 2.8px;
 }
-.divRestaurantAboutUs h1 {
+.restaurant-about-us__heading {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 40px;
@@ -1168,7 +1156,7 @@ footer {
   color: #222222;
   margin-top: 20px;
 }
-.divRestaurantAboutUs p {
+.restaurant-about-us__description {
   margin-top: 20px;
   font-family: "Archivo";
   font-weight: 400;
@@ -1177,7 +1165,7 @@ footer {
   line-height: 24px;
   width: 90%;
 }
-.divRestaurantAboutUs button {
+.restaurant-about-us__button {
   margin-top: 20px;
   width: 60%;
   color: white;
@@ -1190,49 +1178,71 @@ footer {
   padding: 20px;
 }
 
-.facilitiesCoreFeaturesAboutUs {
+.facilities-core-features {
   background-color: #222222;
   display: flex;
-  text-align: center;
   flex-direction: column;
+  align-items: center;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 50px;
 }
-.facilitiesCoreFeaturesAboutUs h5 {
+.facilities-core-features__title {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 2.8px;
   color: #FFFFFF;
 }
-.facilitiesCoreFeaturesAboutUs h1 {
+.facilities-core-features__heading {
   font-family: "Old Standard TT";
   font-weight: 400;
   font-size: 56px;
   color: #FFFFFF;
 }
-.facilitiesCoreFeaturesAboutUs .sliderHighRating {
+.facilities-core-features__slider {
   background-color: #292929;
   padding: 20px;
   margin-top: 30px;
   text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.facilitiesCoreFeaturesAboutUs .sliderHighRating .h1_paraph h1 {
+.facilities-core-features__slider__icon {
+  margin-right: 15px;
+  width: 30px;
+  height: auto;
+}
+.facilities-core-features__slider__slider-number {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 40px;
+  color: #222222;
+  margin-right: 20px;
+}
+.facilities-core-features__slider__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.facilities-core-features__slider__feature-heading {
+  font-family: "Old Standard TT";
+  font-weight: 700;
   font-size: 30px;
-  letter-spacing: -0.9;
-  margin-top: 20px;
+  color: #FFFFFF;
 }
-.facilitiesCoreFeaturesAboutUs .sliderHighRating .h1_paraph p {
+.facilities-core-features__slider__feature-description {
   font-family: "Archivo";
   font-weight: 400;
-  color: #FFFFFF;
   font-size: 14px;
+  color: #FFFFFF;
   line-height: 24px;
   width: 80%;
   margin-top: 20px;
 }
-.facilitiesCoreFeaturesAboutUs .sliderHighRating .h1Big01 {
+.facilities-core-features__slider__h1Big01 {
   font-family: "Archivo";
   font-weight: 700;
   font-size: 120px;
@@ -1243,15 +1253,15 @@ footer {
   right: 0;
   margin-right: 30px;
 }
-.facilitiesCoreFeaturesAboutUs .sliderHighRating img {
+.facilities-core-features__slider__image {
   margin-top: 60px;
   margin-bottom: 10px;
 }
-.facilitiesCoreFeaturesAboutUs .dots-container {
+.facilities-core-features__dots-container {
   text-align: center;
   margin-top: 10px;
 }
-.facilitiesCoreFeaturesAboutUs .dot {
+.facilities-core-features__dot {
   height: 8px;
   width: 8px;
   margin: 0 1.5px;
@@ -1260,43 +1270,82 @@ footer {
   display: inline-block;
   transition: background-color 0.3s ease;
 }
-.facilitiesCoreFeaturesAboutUs .dot:hover {
+.facilities-core-features__dot:hover {
   background-color: #BEAD8E;
 }
 
-.divCounter_SomeFunFacts {
+.counter-fun-facts {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 50px;
 }
-.divCounter_SomeFunFacts .sliderHighRating2 {
-  position: relative;
-  background-color: #292929;
-  padding: 20px;
+.counter-fun-facts__title {
+  color: #777777;
+  font-family: "Archivo";
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
   text-align: left;
-  max-width: 600px;
-  margin: 30px auto;
-  overflow: hidden;
 }
-.divCounter_SomeFunFacts .sliderHighRating2 img {
-  width: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+.counter-fun-facts__heading {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 56px;
+  color: #222222;
+  margin-top: 15px;
+  text-align: left;
 }
-.divCounter_SomeFunFacts .sliderHighRating2 h1 {
-  color: #fff;
+.counter-fun-facts__item {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+.counter-fun-facts__item__icon {
+  margin-right: 15px;
+}
+.counter-fun-facts__item__text {
+  display: flex;
+  flex-direction: column;
+}
+.counter-fun-facts__item__number {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 50px;
+  color: #222222;
+}
+.counter-fun-facts__item__description {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  color: #777777;
+}
+.counter-fun-facts__item__arrow {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  margin: 0;
+  right: 0;
+  margin-right: 25px;
 }
-.divCounter_SomeFunFacts .dots-container2 {
+.counter-fun-facts__default-slider-image {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  align-self: center;
+}
+.counter-fun-facts__dots-slider-image {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  align-self: center;
+}
+.counter-fun-facts__dots-container {
   text-align: center;
   margin-top: 10px;
 }
-.divCounter_SomeFunFacts .dots-container2 .dot2 {
+.counter-fun-facts__dots-container__dot {
   height: 8px;
   width: 8px;
   margin: 0 1.5px;
@@ -1306,54 +1355,8 @@ footer {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-.divCounter_SomeFunFacts .dots-container2 .dot2.active2 {
+.counter-fun-facts__dots-container__dot--active {
   background-color: #BEAD8E;
-}
-.divCounter_SomeFunFacts h1 {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 56px;
-  color: #222222;
-  margin-top: 15px;
-}
-.divCounter_SomeFunFacts h5 {
-  color: #777777;
-  font-family: "Archivo";
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 2.8px;
-}
-.divCounter_SomeFunFacts .funFact_Counter {
-  display: flex;
-  align-items: center;
-  padding: 25px;
-}
-.divCounter_SomeFunFacts .funFact_Counter h1 {
-  font-family: "Old Standard TT";
-  font-weight: 400;
-  font-size: 50px;
-  color: #222222;
-}
-.divCounter_SomeFunFacts .funFact_Counter .arrowFunFact {
-  position: absolute;
-  right: 0;
-  margin-right: 25px;
-}
-.divCounter_SomeFunFacts .funFact_Counter img {
-  margin-right: 15px;
-}
-.divCounter_SomeFunFacts .funFact_Counter p {
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 14px;
-  color: #777777;
-}
-.divCounter_SomeFunFacts .dotsImgSlider {
-  align-self: center;
-  margin-top: 15px;
-}
-.divCounter_SomeFunFacts .imgDefaultSlider {
-  justify-content: center;
 }
 
 footer {

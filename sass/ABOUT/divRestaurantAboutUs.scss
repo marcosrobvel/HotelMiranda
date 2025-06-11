@@ -1,4 +1,4 @@
-.divRestaurantAboutUs{
+.restaurant-about-us {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 80px;
@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
 
-    h5{
+    &__title {
         font-family: 'Archivo';
         font-weight: 700;
         font-size: 14px;
@@ -15,7 +15,7 @@
         letter-spacing: 2.8px;
     }
 
-    h1{
+    &__heading {
         font-family: 'Old Standard TT';
         font-weight: 400;
         font-size: 40px;
@@ -24,7 +24,7 @@
         margin-top: 20px;
     }
 
-    p{
+    &__description {
         margin-top: 20px;
         font-family: 'Archivo';
         font-weight: 400;
@@ -34,11 +34,11 @@
         width: 90%;
     }
 
-    button{
+    &__button {
         margin-top: 20px;
         width: 60%;
         color: white;
-        border-color: #ffffff ;
+        border-color: #ffffff;
         background-color: #BEAD8E;
         font-family: 'Archivo';
         letter-spacing: 3px;
