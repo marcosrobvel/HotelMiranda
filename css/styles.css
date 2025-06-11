@@ -118,8 +118,29 @@
   .header__menu-desktop {
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-between;
+    width: 100%;
+  }
+  .header__letter-h {
+    margin-left: 20px;
+  }
+  .header__title {
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+  .header__title-h5 {
+    font-size: 20px;
+  }
+  .header__letter-h {
+    height: 50px;
+    width: 50px;
+  }
+  .header__menu-list {
+    display: flex;
+    margin-left: 0;
+  }
+  .header__menu-list > li {
+    width: 100px;
   }
 }
 .black-background__perfect-base-for-you {

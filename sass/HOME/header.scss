@@ -151,9 +151,39 @@
     &__menu-desktop {
       display: flex;
       align-items: center;
-      width: 100%;
       justify-content: space-between;
+      width: 100%;
+
+      
     }
+
+    &__letter-h {
+      margin-left: 20px;
+    }
+
+    &__title{
+      margin-left: 20px;
+      margin-right: 50px;
+
+      &-h5 {
+        font-size: 20px;
+      }
+    }
+
+    &__letter-h{
+      height: 50px;
+      width: 50px;
+    }
+
+    &__menu-list {
+        display: flex;
+        margin-left: 0;
+        
+        & > li{
+          width: 100px;
+        }
+      }
+
   }
     
 }
