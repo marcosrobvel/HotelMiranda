@@ -1,6 +1,6 @@
 .header {
 
-    &__container2{
+    &__container2 {
       display: none;
     }
 
@@ -135,18 +135,25 @@
 
 
 @media only screen and (min-width: 1000px) {
-  .header-desktop{
+  .header {
     &__container {
       display: none;
     }
 
-    &__container2 {
+     &__container2 {
       display: flex;
-      height: 80px;
       width: 100%;
-      justify-content: space-between;
+      height: 80px;
       align-items: center;
+      justify-content: space-between;
     }
 
+    &__menu-desktop {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
+    
 }
